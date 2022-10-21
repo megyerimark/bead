@@ -21,3 +21,4 @@ Route::get('/', function () {
 
 
 Route::get("/books",[Bookcontroller::class, "book"]);
+Route::post("/feltolt",[Bookcontroller::class, "feltolt"]);

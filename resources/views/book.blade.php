@@ -59,14 +59,19 @@
 
             <form method="POST" action="feltolt" enctype='multipart/form-data'>
                 @csrf
+        
                 <div class="form-group">
                     <label for="text" > <b>Könyv címe</b></label>
-                    <input type="text" class="form-control" name="name" placeholder="Add meg a nevét" value="{{ old('name')}}">
+                    <input type="text" class="form-control" name="title" placeholder="Add meg a nevét" value="{{ old('name')}}">
                 </div>
 
                 <div class="form-group">
                     <label for="text" > <b>Ár</b></label>
                     <input type="text" class="form-control" name="price" placeholder="Add meg az árát" value="{{ old('price')}}">
+                </div>
+                <div class="form-group">
+                    <label for="text" > <b>Könyv típusa</b></label>
+                    <input type="text" class="form-control" name="type" placeholder="Add meg a köny típusát" value="{{ old('price')}}">
                 </div>
              
 <br>
